@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)http://5u5.co/ -->
+<html lang="Zh_CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>香肠派对</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="referrer" content="no-referrer">
+    <link rel="dns-prefetch" href="https://i0.hdslb.com/">
+    <link rel="dns-prefetch" href="https://article.biliimg.com/">
+    <script src="./香肠派对_files/vue.min.js.下载"></script>
+    <style>
+        body {
+            background-color: #fff;
+            text-align: center;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        img,.fullscreen {
+            display: block;
+            width: 100%;
+            margin: auto;
+            z-index: -99;
+        }
+        .picQR, .picQR2{
+            position: relative;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        .logo{
+            position: absolute;
+            z-index: 9;
+            width: 10%;
+            border:5px #ffffff solid;
+            border-radius: 10px;
+        }
+        #qrcode, #qrcode2 {
+            width: auto;
+            height: 90%;
+            border-radius: 10px;
+            border: 3px #eee solid;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            z-index: 5;
+            position: absolute;
+        }
+        .picQR img, .picQR2 img {
+            display: flex;
+            margin-top: -1px;
+            margin-bottom: -1px;
+        }
+        #load {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 999999999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hidden{
+            display: none!important;
+        }
+        #load img {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            animation: rotate 2s linear infinite;
+        }
+        img {
+            border: none;
+        }
+        /* 旋转动画 */
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        iframe{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 333;
+            border: none;
+        }
+        .to-gw{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            z-index: 999;
+            margin: auto;
+            font-size: 2rem;
+        }
+        .topbar {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            color: #fff;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            background-color: black;
+        }
+        .topbar-bg img {
+            width: 100%;
+            height: 100%;
+        }
+        .topbar-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .topbar-logo {
+            align-self: flex-start;
+            padding-left: 5px;
+            padding-top: 5px;
+        }
+
+        .topbar-logo img {
+            width: 45px;
+            height: 45px;
+        }
+
+        .topbar-text {
+            margin-left: 10px;
+            font-family: -apple-system, "system-ui", "Apple Color Emoji", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans CN", sans-serif;
+        }
+
+        .topbar-text p {
+            text-align: left;
+        }
+
+        .topbar-text .p1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            padding-right: 1rem;
+        }
+
+        .topbar-right-btn {
+            background-color: #fff;
+            color: #b5971a;
+            border-radius: 5.2rem;
+            height: 40px;
+            width: 8rem;
+            line-height: 40px;
+            font-size: 1.1rem;
+        }
+
+        @media screen and (min-width: 750px) {
+            .fullscreen, .picQR, .picQR2, .to-gw, .qrcode, #app {
+                width: 750px;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body class="">
+<div id="app"><div class="topbar"><div class="topbar-left"><a href="javascript:;" title="联动奖励" class="topbar-logo"><img src="./香肠派对_files/320618ba4017e52140b6bf72fc6acc1af843fb12.jpg" alt="logo"></a> <div class="topbar-text"><p class="p1">香肠派对</p></div></div> <div class="topbar-right"><b><div class="topbar-right-btn">进入官网</div></b></div></div> <!----> <div id="load" class="hidden"><img src="./香肠派对_files/ae91e7d7eb3fd960fd499143397b12e3393011343.png" alt="加载" referrerpolicy="no-referrer"></div> <img src="./香肠派对_files/467a2d8428b4677bf72957e68178dfa56acc8d2c.jpg" alt="头图，如不显示，请使用系统浏览器打开" referrerpolicy="no-referrer" class="fullscreen"> <img src="./香肠派对_files/5d7d11935b9343f655c27725ec13c66682f28b21.jpg" referrerpolicy="no-referrer" alt="这个图是点击的领取效果" class="fullscreen"> <img src="./香肠派对_files/c82c8dcce92fb7908cba9cfc207c5b6770234ae3.jpg" alt="" referrerpolicy="no-referrer" class="fullscreen"> <div class="picQR"><img src="./香肠派对_files/950c47c22aea58b6c750788619fb3fa1c857a43d.jpg" alt="" referrerpolicy="no-referrer" class="fullscreen"> <img id="qrcode" src="./香肠派对_files/fd7106bfc31afe2ebd73d8f7039c1917bee5e9fb.png" alt="二维码" referrerpolicy="no-referrer"></div> <img src="./香肠派对_files/b84a020188f22af3eac9b02a7f831c9bca84df3c.jpg" alt="" referrerpolicy="no-referrer" class="fullscreen"> <img src="./香肠派对_files/80b095ae1615abbb07ad822b8f31a2059a1bb618.jpg" alt="" referrerpolicy="no-referrer" class="fullscreen"></div>
+
+<script>
+
+
+  const 二维码图片链接列表 = [
+
+    'https://archive.biliimg.com/bfs/archive/fd7106bfc31afe2ebd73d8f7039c1917bee5e9fb.png'
+    
+    ]
+
+  // const 副码 = 'https://cm2.sakuracomic.xyz/api/open-api/sub-code/1810160576341651458'
+
+  const 二维码图片链接 = 二维码图片链接列表[Math.floor(Math.random() * 二维码图片链接列表.length)]
+
+  const getQRCodeImg=(url,el)=>{if(url.includes('/open-api/')){const query=()=>{return fetch(url).then(res=>res.json()).then(res=>{if(res.data){document.querySelector(el).src=res.data}})};query().catch(query)}else{document.querySelector(el).src=url}};
+  getQRCodeImg(二维码图片链接, '#qrcode')
+  // getQRCodeImg(副码, '#qrcode2')
+
+
+
+
+  const app = new Vue({
+    el: '#app',
+    data: {
+      showIframe: false
+    },
+    methods: {
+      receive() {
+        document.querySelector('#load').classList.remove('hidden')
+        setTimeout(() => {
+          document.querySelector('#load').classList.add('hidden')
+          vant.Dialog({
+            message: '请完成下列任务后再领取，未完成任务领取失败，完成后点击领取自动弹出（兑换码仅限一次使用）',
+            className: 'alert',
+            confirmButtonText: '确定'
+          })
+        }, 500)
+      },
+      toSW(){
+        location.href = 三网链接
+      },
+      togglePage(){
+        this.showIframe = !this.showIframe
+        if (this.showIframe) {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior:'smooth'
+          })
+        }
+      },
+    },
+  });
+</script>
+
+<script>
+  const isIPhone = /iPhone/.test(navigator.userAgent);
+  const isQuark = /Quark/.test(navigator.userAgent);
+  const isUC = /UCBrowser/.test(navigator.userAgent);
+  if (isIPhone && (isQuark || isUC)) {
+    document.querySelectorAll('img').forEach((img) => {
+      const isBiliImg = ['hdslb.com', 'biliimg.com'].some((domain) => img.src.includes(domain));
+      if (isBiliImg) {
+        img.src = 'https://images.weserv.nl/?url='+img.src;
+      }
+    });
+  }
+</script>
+
+<link href="./香肠派对_files/index.min.css" rel="stylesheet">
+<script src="./香肠派对_files/vant.min.js.下载"></script>
+
+<script charset="UTF-8" id="LA_COLLECT" src="./香肠派对_files/js-sdk-pro.min.js.下载"></script>
+<script>LA.init({id:"3KzU9Ba1rKFyDpc3",ck:"3KzU9Ba1rKFyDpc3",autoTrack:true,hashMode:true})</script>
+
+
+</body></html>
